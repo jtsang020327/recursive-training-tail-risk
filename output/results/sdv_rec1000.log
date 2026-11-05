@@ -1,0 +1,35 @@
+# CTGAN recursion with 1,000 epochs (m/n = 1, 6 generations, 4 seeds)
+   fit 41 done after 48s
+   fit 4101 done after 139s
+   fit 4102 done after 230s
+   fit 4103 done after 321s
+   fit 4104 done after 411s
+   fit 4105 done after 500s
+   fit 4106 done after 590s
+   seed 41: estimate 0.0102 0.0072 0.0092 0.0095 0.0102 0.0078 0.0067 | h 0.0052 0.0094 0.0096 0.0086 0.0056 0.0056 0.0009
+   fit 42 done after 637s
+   fit 4201 done after 727s
+   fit 4202 done after 814s
+   fit 4203 done after 906s
+   fit 4204 done after 998s
+   fit 4205 done after 1089s
+   fit 4206 done after 1181s
+   seed 42: estimate 0.0102 0.0074 0.0085 0.0095 0.0083 0.0088 0.0099 | h 0.0079 0.0050 0.0064 0.0075 0.0057 0.0096 0.0112
+   fit 43 done after 1230s
+   fit 4301 done after 1322s
+   fit 4302 done after 1410s
+   fit 4303 done after 1501s
+   fit 4304 done after 1591s
+   fit 4305 done after 1681s
+   fit 4306 done after 1769s
+   seed 43: estimate 0.0102 0.0097 0.0090 0.0122 0.0113 0.0132 0.0106 | h 0.0115 0.0061 0.0113 0.0110 0.0159 0.0098 0.0078
+   fit 44 done after 1817s
+   fit 4401 done after 1907s
+   fit 4402 done after 1999s
+   fit 4403 done after 2089s
+   fit 4404 done after 2179s
+   fit 4405 done after 2268s
+   fit 4406 done after 2359s
+   seed 44: estimate 0.0102 0.0115 0.0097 0.0115 0.0081 0.0097 0.0095 | h 0.0109 0.0086 0.0136 0.0061 0.0094 0.0051 0.0057
+CTGAN, 1,000 epochs: one-round ratio 0.87, Proposition 1 fixed point 0.900%, simulated long run 0.950%
+Total time 2359s

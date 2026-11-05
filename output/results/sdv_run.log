@@ -1,0 +1,29 @@
+# SDV synthesizers: one round of training (median over 5 seeds)
+## SDV defaults
+model | P(>x0) | h(1%) | h(0.5%) | h(0.2%) | implied gamma (1%) | Hill top 10% | max
+CTGAN | 0.101 | 0.0056 | 0.0008 | 0.0001 | 1.25 | 1.63 | 86
+TVAE | 0.025 | 0.0000 | 0.0000 | 0.0000 | inf | 3.73 | 17
+Gaussian copula | 0.167 | 0.0008 | 0.0001 | 0.0000 | 2.12 | 2.76 | 55
+## no clipping to the observed range
+model | P(>x0) | h(1%) | h(0.5%) | h(0.2%) | implied gamma (1%) | Hill top 10% | max
+CTGAN | 0.101 | 0.0056 | 0.0008 | 0.0001 | 1.25 | 1.63 | 86
+TVAE | 0.025 | 0.0000 | 0.0000 | 0.0000 | inf | 3.73 | 17
+Gaussian copula | 0.167 | 0.0008 | 0.0001 | 0.0000 | 2.12 | 2.76 | 55
+# SDV synthesizers: other settings (median over 3 seeds)
+model | P(>x0) | h(1%) | h(0.5%) | h(0.2%) | implied gamma (1%) | Hill top 10% | max
+CTGAN, 1,000 epochs | 0.091 | 0.0086 | 0.0042 | 0.0005 | 1.06 | 1.43 | 84
+TVAE, 1,000 epochs | 0.075 | 0.0058 | 0.0003 | 0.0000 | 1.24 | 1.62 | 82
+copula, normal marginal | 0.401 | 0.0037 | 0.0001 | 0.0000 | 1.43 | 4.33 | 45
+copula, gamma marginal | 0.000 | 0.0000 | 0.0000 | 0.0000 | inf | 6.72 | 14
+copula, kernel marginal | 0.133 | 0.0092 | 0.0046 | 0.0022 | 1.03 | 1.60 | 263
+# Recursive training with SDV defaults (m/n = 1, 6 generations, 2 seeds)
+CTGAN: one-round ratio 0.85, Proposition 1 fixed point 0.880%, simulated long run 0.827%
+   seed 31: estimate 0.0102 0.0078 0.0088 0.0078 0.0072 0.0074 0.0090
+   seed 32: estimate 0.0102 0.0102 0.0115 0.0078 0.0081 0.0076 0.0104
+TVAE: one-round ratio 0.00, Proposition 1 fixed point 0.509%, simulated long run 0.535%
+   seed 31: estimate 0.0102 0.0051 0.0055 0.0055 0.0060 0.0055 0.0051
+   seed 32: estimate 0.0102 0.0051 0.0053 0.0051 0.0051 0.0051 0.0053
+Gaussian copula: one-round ratio 0.07, Proposition 1 fixed point 0.527%, simulated long run 0.519%
+   seed 31: estimate 0.0102 0.0055 0.0058 0.0060 0.0055 0.0051 0.0051
+   seed 32: estimate 0.0102 0.0053 0.0062 0.0065 0.0053 0.0051 0.0051
+Total time 4635s
